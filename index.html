@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Sorpresa Patita</title>
+</head>
+<body>
+    <div class="loader">
+        <p>cargando...</p>
+    </div>
+    <div class="first-card">
+        <h1>Bienvenida a tu sorpresa</h1>
+        <p>Hola patita, bueno solo quería hacer esto para que cada vez que me eches de menos, abras esto y te consuele un poco, espero.</p>
+    </div>
+    <div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            // Esperar 5 segundos antes de ocultar el elemento con la clase "loader"
+            setTimeout(function() {
+                $(".loader").fadeOut("slow");
+            }, 2000);
+        });
+    </script>
+    
+</body>
+</html>
