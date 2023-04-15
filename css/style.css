@@ -36,12 +36,15 @@ body{
     flex-wrap: nowrap;
 }
 .first-card{
+    text-align: center;
+    font-size: 1.8em;
     margin: 2em 10em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 25%;
+    gap: 2em;
+    height: 40%;
     background: rgba(0, 0, 0, .8);
     color: white;
     box-shadow: 0 0 20px violet,
@@ -50,7 +53,28 @@ body{
                 0 0 20px violet,
                 0 0 20px violet;
 }
-.first-card > p{
-    font-size: 1.8em;
-    margin: 0 2em;
+.second-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sorpresa{
+    height: 4em;
+    width: 7em;
+    cursor: pointer;
+    background-color: antiquewhite;
+    box-shadow: 0 0 20px aq,
+            0 0 20px aqua,
+            0 0 20px aqua,
+            0 0 20px aqua,
+            0 0 20px aqua; 
+    transition: all .5s;   
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+.sorpresa:active{
+    width: 13em;
+    height: 6em;
+    color: blueviolet;
 }
