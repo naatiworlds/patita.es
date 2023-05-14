@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Sorpresa Patita</title>
+</head>
+<body>
+    <div class="loader">
+        <p>cargando...</p>
+    </div>
+    <div class="first-card">
+        <h1>Bienvenida a tu sorpresa</h1>
+        <p>Hola patita, bueno solo quería hacer esto para que cada vez que me eches de menos, abras esto y te consuele un poco, espero.</p>
+    </div>
+    <div class="second-card">
+        
+        <button id="boton-sorpresa" class="sorpresa" onclick="sorpresa()" type="button">
+            Clicame
+        </button>
+        <br>
+        <div id="sorpresa">
+            <h2>JA, sorpresaaaa</h2>
+            <img src="resources/abrazo.webp" alt="Pues un abrazo sin más">
+            <p>
+                Esta no te la esperabas eeh. <br>
+                Bueno decirte que eres increíble y que
+                siempre lo serás eres una persona 
+                maravillosa. No sé como expresarlo muy
+                bien pero bueno lo voy a intentar. <br>
+                Cuando te conocí ni de broma me esperaba
+                que fueramos a llegar tan lejos, pero ni
+                de broma, de hecho pensaba que ni me ibas
+                a responder sabes, pero eh... <br>
+                Fíjate hasta donde hemos llegado chavala
+                es para fliparla en realidad eh, siento hacerte
+                leer tanto pero te joes :D <br>
+                Eres lo mejor que me ha pasado en la vida y eso
+                jamás lo va a cambiar nadie ¿vale? quiero que 
+                lo memorices bien, y que cuando nos pasen cosas...
+                sepas, que pase lo que pase jamás pero jamás
+                me voy a separar de ti eres lo mejor que me ha pasado
+                en la vida y quería agradecertelo y serguiré
+                agradeciendotelo siempre jamás, porque de verdad mereces
+                la pena, merece la pena cada segundo que estoy contigo
+                merece la pena cada mensajito tuyo, y por eso quiero pasar
+                el resto de mi vida contigo, me has demostrado que 
+                la distancia es simplemente un número que nos separa, 
+                pero que en el fondo... <i>SIEMPRE ESTAREMOS JUNTAS</i>
+            </p>
+            <br>
+            <p>
+                <b>SIEMPRE JUNTAS</b>
+            </p>
+            <br>
+            <p>
+                <b>Lejos de mis ojos, cerca de mi coración.</b>
+            </p>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Página hecha por la NATILLA &copy;</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            // Esperar 5 segundos antes de ocultar el elemento con la clase "loader"
+            setTimeout(function() {
+                $(".loader").fadeOut("slow");
+            }, 2000);
+        });
+    </script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

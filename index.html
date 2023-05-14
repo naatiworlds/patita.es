@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>Sorpresa Patita</title>
+    <title>Login/patita.com</title>
 </head>
 <body>
     <div class="loader">
@@ -16,13 +13,25 @@
     </div>
     <div class="first-card">
         <h1>Bienvenida a tu sorpresa</h1>
-        <p>Hola patita, bueno solo quería hacer esto para que cada vez que me eches de menos, abras esto y te consuele un poco, espero.</p>
     </div>
-    <div class="second-card">
-        <button class="sorpresa" onclick="sorpresa()" type="button">
-            Clicame
-        </button>
+    <div class="login">
+        <div class="form">
+            
+            <div class="nombre">    
+                <label for="nombre">User:</label>
+                <input id="nombre" type="text" pattern="^([A-ZÁÉÍÓÚÑa-zñáéíóúñ]{1,}'?-?[A-ZÁÉÍÓÚÑa-zñáéíóú]+[\s]*)+$">
+            </div>
+            <div class="password">
+                <label for="contraseña">Constraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" pattern="^([A-ZÁÉÍÓÚÑa-zñáéíóúñ]{1,}'?-?[A-ZÁÉÍÓÚÑa-zñáéíóú]+[\s]*)+$">
+            </div>
+            <br>
+            <input id="boton-enviar" type="submit" value="Enviar" onclick="validar()">
+        
+        </div>
     </div>
+
+    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
@@ -32,7 +41,5 @@
             }, 2000);
         });
     </script>
-    <script src="js/main.js"></script>
-    
 </body>
 </html>

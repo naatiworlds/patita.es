@@ -8,6 +8,8 @@ body{
     height: 100vh;
     width: 100%;
     font-family: 'Pacifico', cursive;
+    z-index: 1;
+    
 }
 .loader {
     position: fixed;
@@ -68,13 +70,70 @@ body{
             0 0 20px aqua,
             0 0 20px aqua,
             0 0 20px aqua; 
-    transition: all .5s;   
     text-decoration: none;
     color: black;
     font-size: 1.1em;
 }
 .sorpresa:active{
-    width: 13em;
-    height: 6em;
+    transform: scale(.9);
     color: blueviolet;
+}
+#sorpresa{
+    display: none;
+}
+.form{
+    color: white;
+    font-weight: bold;
+    width: 25%;
+    padding: 1em 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, .5);
+}
+.nombre{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+#boton-enviar{
+    width: 8em;
+    height: 3em;
+}
+input:invalid {
+    background-color: red;
+    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both; 
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+footer{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 1em;
+    background-color: rgba(0, 0, 0, .5);
 }
