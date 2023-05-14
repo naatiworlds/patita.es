@@ -28,7 +28,7 @@ function validar(){
     const constraseña = document.getElementById("contraseña").value;
 
     if (user == "patita" && constraseña == "teamo"){
-        window.location.href = "../prueba.html"
+        window.location.href = "../pages/prueba.html"
     }
     else{
         alert("Contraseña o usuario no es válido")
