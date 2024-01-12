@@ -28,7 +28,7 @@ function validar(){
     const constraseña = document.getElementById("contraseña").value;
 
     if (user == "patita" && constraseña == "teamo"){
-        window.location.href = "https://natillaworlds.github.io/patita.es/pages/prueba.html"
+        window.location.href = "https://naatiworlds.github.io/patita.es/pages/prueba.html"
     }
     else{
         alert("Contraseña o usuario no es válido")
