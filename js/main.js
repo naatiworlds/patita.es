@@ -22,7 +22,7 @@ function sorpresa(){
     sorpresa.style.height = "100%"
     sorpresa.style.padding = "1em 1em"
     sorpresa.style.letterSpacing = ".2em"
-}
+} 
 function validar(){
     const user = document.getElementById("nombre").value;
     const constraseña = document.getElementById("contraseña").value;
